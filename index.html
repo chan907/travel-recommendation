@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderWise | Travel Recommendations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">✈ WanderWise</a>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">FIND YOUR NEXT ADVENTURE</p>
+        <h1>Discover places<br>that move you.</h1>
+        <p class="hero-copy">Explore beautiful beaches, inspiring temples, and unforgettable countries. Your next journey starts here.</p>
+        <a class="button button-light" href="#recommendations">Explore destinations</a>
+      </div>
+    </section>
+
+    <section class="search-section" id="recommendations">
+      <div class="section-heading">
+        <p class="eyebrow">PERSONALIZED INSPIRATION</p>
+        <h2>Where would you like to go?</h2>
+        <p>Search for a beach, temple, or country to discover recommendations.</p>
+      </div>
+      <form class="search-form" id="searchForm">
+        <label class="sr-only" for="searchInput">Search destinations</label>
+        <input id="searchInput" type="search" placeholder="Try beach, temple, or Japan..." autocomplete="off">
+        <button class="button" type="submit">Search</button>
+        <button class="button button-outline" type="button" id="resetButton">Reset</button>
+      </form>
+      <p class="search-message" id="searchMessage" aria-live="polite">Showing all featured destinations.</p>
+      <div class="recommendation-grid" id="recommendationGrid">
+        <article class="destination-card" data-category="beach beaches">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Tropical beach with turquoise water">
+          <div class="card-body"><span class="tag">Beach</span><h3>Maldives Beach Escape</h3><p>Soft white sand, clear water, and peaceful island views.</p></div>
+        </article>
+        <article class="destination-card" data-category="beach beaches">
+          <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=80" alt="Sunny beach lined with palm trees">
+          <div class="card-body"><span class="tag">Beach</span><h3>Goa, India</h3><p>Golden shores, coastal cafés, and beautiful sunsets.</p></div>
+        </article>
+        <article class="destination-card" data-category="temple temples">
+          <img src="https://images.unsplash.com/photo-1606293926075-69a00dbadec3?auto=format&fit=crop&w=900&q=80" alt="Traditional Asian temple architecture">
+          <div class="card-body"><span class="tag">Temple</span><h3>Kyoto Temples, Japan</h3><p>Discover serene gardens and traditional architecture.</p></div>
+        </article>
+        <article class="destination-card" data-category="temple temples">
+          <img src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=900&q=80" alt="Ornate Hindu temple architecture">
+          <div class="card-body"><span class="tag">Temple</span><h3>Angkor Wat, Cambodia</h3><p>Explore remarkable stone temples and rich history.</p></div>
+        </article>
+        <article class="destination-card" data-category="country countries japan">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80" alt="Traditional street in Japan">
+          <div class="card-body"><span class="tag">Country</span><h3>Japan</h3><p>A blend of modern cities, culture, food, and nature.</p></div>
+        </article>
+        <article class="destination-card" data-category="country countries italy">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Colorful coastal village in Italy">
+          <div class="card-body"><span class="tag">Country</span><h3>Italy</h3><p>Enjoy historic towns, coastal scenery, and local cuisine.</p></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No matching destinations found. Try “beach”, “temple”, “Japan”, or “Italy”.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© 2026 WanderWise · Made for curious travelers</p><a href="contact.html">Get in touch</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
